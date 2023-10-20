@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServiceContextPropagation", "..\GrpcServiceContextPropagation\GrpcServiceContextPropagation.csproj", "{CF491257-6F83-42D0-AA68-53406182AA18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServiceContextPropagation", "GrpcServiceContextPropagation\GrpcServiceContextPropagation.csproj", "{CF491257-6F83-42D0-AA68-53406182AA18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "..\GrpcClient\GrpcClient.csproj", "{1A0FD4AB-55E9-492E-9B70-4213FB397D19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{1A0FD4AB-55E9-492E-9B70-4213FB397D19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcCoreClient", "..\GrpcCoreClient\GrpcCoreClient.csproj", "{5CAC76D8-9D50-43BA-944D-528C7DD7DE32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcCoreClient", "GrpcCoreClient\GrpcCoreClient.csproj", "{5CAC76D8-9D50-43BA-944D-528C7DD7DE32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
