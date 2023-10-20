@@ -5,7 +5,7 @@ A simple ASP.NET Core gRPC service and two gRPC clients (using Grpc.NET.Client a
 ## Findings:
 * Grpc.Net.Client based client passes the Trace Context from client to server.
 * No additional code or OTel dependencies are required.
-* OTel has a concept of Baggage. This is not transferred by the Grpc.Net.Client out of the box. If an application uses Baggage (though it is discouraged to do so) then they can use the OpenTelemetry.GrpcNetClient.Instrumentation library in their application to propagate the context that also includes Baggage.
+* OTel has a concept of Baggage. This is not transferred by the Grpc.Net.Client out of the box. If an application uses Baggage (though it is discouraged to do so) then they can use the [OpenTelemetry.Instrumentation.GrpcNetClient](https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcNetClient) library in their application to propagate the context that also includes Baggage.
 
 ## Grpc.Net Client logs:
 ```
@@ -34,7 +34,7 @@ Hello Grpc .NET Client!
  Server Activity Span ID = 6f461696c1474769
 ```
 * Grpc.Core based client *does not* pass the Trace Context from client to the server.
-* However, the applications using Grpc.Core client can use [OpenTelemetry.Instrumentation.GrpcCore](https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.5)) for auto-instrumentation and context propagation
+* However, the applications using Grpc.Core client can use [OpenTelemetry.Instrumentation.GrpcCore](https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.5) for auto-instrumentation and context propagation
 
 ## Grpc.Core Client logs:
 ```
